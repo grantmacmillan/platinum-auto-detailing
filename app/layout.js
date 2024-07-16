@@ -1,7 +1,23 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Poppins } from "next/font/google";
+import './globals.css';
+import CustomFooter from "./components/CustomFooter";
+import CustomNavbar from "./components/CustomNavbar";
 
-const inter = Inter({ subsets: ["latin"] });
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import './buttons.css';
+import './navbar.css';
+
+import './dividers.css';
+
+
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +27,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+      <body className={poppins.className}>
+        <CustomNavbar />
+        <main>{children}</main>
+        <CustomFooter />
+      </body>
     </html>
   );
 }
