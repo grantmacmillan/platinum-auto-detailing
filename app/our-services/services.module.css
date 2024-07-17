@@ -1,0 +1,121 @@
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 800px;
+    background: url('/images/wash-car.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 0) 66%);
+    z-index: 1;
+}
+
+/* Media query for medium devices and smaller */
+@media (max-width: 992px) {
+    .main::before {
+        background: none;
+    }
+}
+
+.overlay {
+    text-align: left;
+    z-index: 2;
+
+}
+
+.heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.subHeading {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btnGallery {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btnContactUs {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btnBookNow {
+    margin-bottom: -45px;
+    align-self: center;
+    border-radius: 0;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btnBookNow:hover {
+    transform: scale(110%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.svgDivider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    aspect-ratio: 900/90;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
+}
+
+.servicesSection {
+    width: 100%;
+}
+
+.plan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plan h2 {
+    color: aqua;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.list {
+    list-style-type: square;
+}

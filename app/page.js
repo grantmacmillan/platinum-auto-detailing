@@ -49,7 +49,6 @@ export default function Home() {
           </Row>
         </Container>
         <img src="/svgs/triangle.svg" alt="Divider" className={styles.svgDivider} />
-
       </div>
 
 
