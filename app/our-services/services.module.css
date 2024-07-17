@@ -90,6 +90,7 @@
 }
 
 .servicesSection {
+    scroll-margin-top: 200px;
     width: 100%;
 }
 
@@ -112,6 +113,12 @@
 .plan h2 {
     color: aqua;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.planPrice {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: green;
 }
 
 .list {
