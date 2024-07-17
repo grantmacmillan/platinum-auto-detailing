@@ -66,7 +66,7 @@ export default function Services() {
                     <Row className="justify-content-center">
                         {plans.map(plan => {
                             const myList = plan.list.map((item) =>
-                                <ul lassName={`py-1 ${styles.list}`}>
+                                <ul className={`py-1 ${styles.list}`}>
                                     <li>{item}</li>
                                 </ul>
                             )
