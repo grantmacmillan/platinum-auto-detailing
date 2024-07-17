@@ -146,3 +146,29 @@
 .custom-shape-divider-bottom-1720163553 .shape-fill {
     fill: var(--container-color-dark);
 }
+
+
+
+
+
+
+.custom-shape-divider-bottom-1721177111 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1721177111 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 64px;
+}
+
+.custom-shape-divider-bottom-1721177111 .shape-fill {
+    fill: red;
+}
