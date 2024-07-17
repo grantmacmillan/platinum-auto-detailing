@@ -69,10 +69,9 @@
 
 .btnBookNow {
     margin-bottom: -45px;
-    align-self: center;
     border-radius: 0;
     padding: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: 0.3s;
 }
 
 .btnBookNow:hover {
@@ -100,7 +99,6 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -118,4 +116,14 @@
 
 .list {
     list-style-type: square;
+}
+
+.planImage {
+    border-radius: 4px;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

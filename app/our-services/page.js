@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./services.module.css";
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -15,12 +15,14 @@ export default function Services() {
         {
             id: '0',
             title: 'Silver Package',
+            image: '/images/wash-car.jpg',
             list: ['Full vacuuming throughout the entire vehicle',
                 'Wipe down on front dash and console, doors, and seats']
         },
         {
             id: '1',
             title: 'Gold Package',
+            image: '/images/wash-car.jpg',
             list: ['Full vacuuming throughout the entire vehicle',
                 'Removable mat and removable carpet shampoo',
                 'Driver side pedal cleanse',
@@ -29,6 +31,7 @@ export default function Services() {
         {
             id: '2',
             title: 'Platinum Package',
+            image: '/images/wash-car.jpg',
             list: ['Full vacuuming throughout the entire vehicle',
                 'Removable mat and removable carpet shampoo',
                 'Driver side pedal cleanse',
@@ -63,7 +66,7 @@ export default function Services() {
                     <Row className="justify-content-center">
                         {plans.map(plan => {
                             const myList = plan.list.map((item) =>
-                                <ul key={plan.id} className={`py-1 ${styles.list}`}>
+                                <ul lassName={`py-1 ${styles.list}`}>
                                     <li>{item}</li>
                                 </ul>
                             )
@@ -71,6 +74,7 @@ export default function Services() {
                                 <Col key={plan.id} lg={4} md={6} sm={12} className="mb-4">
                                     <div className={styles.plan}>
                                         <h2>{plan.title}</h2>
+                                        <Image src={plan.image} className={`my-3 ${styles.planImage}`}></Image>
                                         <div className="pt-3">
                                             {myList}
                                         </div>
