@@ -77,7 +77,6 @@
   height: auto;
   z-index: 1;
   aspect-ratio: 900/90;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
 
 }
 

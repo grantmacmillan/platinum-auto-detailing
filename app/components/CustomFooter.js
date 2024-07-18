@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { FaCheck, FaPaperPlane, FaPhone, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaFacebook, FaLinkedin, FaTiktok } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6'
 import { Container, Row, Col, Navbar, } from 'react-bootstrap';
-import Logo from '../../public/images/logo.png';
+import Logo from '../../public/images/clear-logo.png';
 
 const CustomFooter = () => {
     return (
