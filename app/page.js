@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaStar, FaDollarSign } from 'react-icons/fa';
-
+import ImageSlider from "./components/ImageSlider";
 
 
 export default function Home() {
@@ -14,21 +14,21 @@ export default function Home() {
       title: 'Interior Car Detailing',
       description: 'Meticulous interior car detailing service to keep your car\'s interior spotless and fresh.',
       imgSrc: '/images/client-pics/interior1.jpg', // Replace with your image URL
-      link: '/our-services'
+      link: '/our-services#interior'
     },
     {
       id: 2,
       title: 'Exterior Car Detailing',
       description: 'Thorough exterior car detailing to restore and protect your car\'s paint and finish.',
       imgSrc: '/images/client-pics/cleaning1.jpg', // Replace with your image URL
-      link: '/our-services'
+      link: '/our-services#exterior'
     },
     {
       id: 3,
       title: 'Clay Bar and Premium Wax',
       description: 'Advanced clay bar treatment and premium wax for a smooth and glossy car exterior.',
       imgSrc: '/images/client-pics/exterior1.jpg', // Replace with your image URL
-      link: '/our-services'
+      link: '/our-services#wax'
     },
   ];
 
@@ -48,7 +48,7 @@ export default function Home() {
                     Book Now
                   </span>
                 </Link>
-                <Link href="/contact" passHref >
+                <Link href="/our-services" passHref >
                   <span className="cta-button">
 
                     Our Services
@@ -134,6 +134,10 @@ export default function Home() {
             })}
           </Row>
         </Container>
+      </section>
+
+      <section >
+        <ImageSlider beforeImage="/images/inside-before.jpg" afterImage="/images/inside-after.jpg"></ImageSlider>
       </section>
     </>
 

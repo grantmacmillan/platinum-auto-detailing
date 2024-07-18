@@ -1,0 +1,89 @@
+/* components/ImageSlider.module.css */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    margin: 40px 0;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    border: 2px solid black;
+    max-width: 600px;
+    width: 100%;
+}
+
+.sliderButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--new-primary);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sliderButton:before,
+.sliderButton:after {
+    content: '';
+    padding: 3px;
+    display: inline-block;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+}
+
+.sliderButton:before {
+    transform: rotate(135deg);
+}
+
+.sliderButton:after {
+    transform: rotate(-45deg);
+}
+
+.beforeText {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--text-light);
+    text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary) !important;
+    margin: 10px 0;
+    align-self: flex-start;
+    /* Align to the left */
+}
+
+.afterText {
+    font-weight: 600;
+    font-size: 2rem;
+
+    color: var(--text-light);
+    text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary) !important;
+    margin: 10px 0;
+    align-self: flex-end;
+    /* Align to the left */
+}
+
+.galleryButton {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    /* Adjust the position as needed */
+    transform: translateY(-50%);
+
+    z-index: 2;
+
+}
+
+@media (max-width: 768px) {
+
+    /* Bootstrap 'md' size and smaller */
+    .galleryButton {
+        display: none;
+    }
+}
