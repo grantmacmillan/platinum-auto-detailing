@@ -37,13 +37,30 @@
 }
 
 .heading {
-  font-size: 48px;
+  font-weight: 400;
+  font-size: 3rem;
   margin-bottom: 20px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+  color: var(--text-light);
+
+}
+
+.heading strong {
+  font-weight: 600;
+  color: var(--text-light);
+  text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary) !important;
+  /* Updated shadow color */
+
 }
 
 .subHeading {
-  font-size: 24px;
+  color: var(--text-light);
+
+  font-size: 1.5rem;
+  font-weight: 300;
   margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
 }
 
 .buttons {
@@ -51,26 +68,7 @@
   gap: 20px;
 }
 
-.bookNow {
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
 
-.viewServices {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.bookNow:hover,
-.viewServices:hover {
-  opacity: 0.8;
-}
 
 .svgDivider {
   position: absolute;
@@ -98,7 +96,7 @@
 
 .sectionHeading strong {
   font-weight: 600;
-  color: var(--background-color);
+  color: var(--text-light);
   text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary);
   /* Updated shadow color */
 
@@ -106,20 +104,20 @@
 
 
 
-.subheading {
+.sectioinSubheading {
   font-size: 1.2rem;
   font-weight: normal;
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
-.subheading strong {
+.sectioinSubheading strong {
   font-weight: 600;
   color: var(--new-primary);
   position: relative;
 }
 
-.subheading strong::after {
+.sectioinSubheading strong::after {
   content: '';
   position: absolute;
   left: 0;
@@ -150,7 +148,8 @@
 .whyChooseUsIcon {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  color: var(--new-primary);
+  color: var(--text-light);
+  filter: drop-shadow(0px 0px 1px var(--new-primary)) drop-shadow(0px 0px 2px var(--new-primary)) drop-shadow(0px 0px 2px var(--new-primary)) drop-shadow(0px 0px 4px var(--new-primary));
 }
 
 .text-center h3 {
@@ -229,9 +228,10 @@
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
+  color: var(--text-light);
   margin: 20px 0;
   transition: margin 0.3s ease-out;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary);
 }
 
 .hoverCardDescription {

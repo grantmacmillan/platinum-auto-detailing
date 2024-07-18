@@ -172,3 +172,12 @@
 .custom-shape-divider-bottom-1721177111 .shape-fill {
     fill: red;
 }
+
+
+.heading-divider {
+    height: 2px;
+    width: 50%;
+    background: var(--new-primary);
+    background: linear-gradient(90deg, var(--background-color), var(--new-primary), var(--background-color));
+    margin: 15px auto;
+}

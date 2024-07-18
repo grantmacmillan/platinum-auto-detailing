@@ -39,7 +39,7 @@ export default function Home() {
         <Container >
           <Row>
             <Col md={6} className={styles.overlay}>
-              <h1 className={styles.heading}>We Bring the Shine to You</h1>
+              <h1 className={styles.heading}>We Bring the <strong>Shine</strong> to You</h1>
               <h2 className={styles.subHeading}>Exceptional Care Delivered to Your Location!</h2>
               <div className={styles.buttons}>
                 <Link href="/contact" passHref >
@@ -66,11 +66,12 @@ export default function Home() {
           <Row className="mb-5">
             <Col md={6}>
               <h2 className={styles.sectionHeading}>Why <strong>Choose Us?</strong></h2>
-              <p className={styles.subheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
+
+              <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
             </Col>
             <Col md={6}>
               <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
-              <Link href="/contact" passHref >
+              <Link href="/about-us" passHref >
                 <span className="cta-button">
 
                   Learn More
@@ -83,17 +84,20 @@ export default function Home() {
               <FaStar className={styles.whyChooseUsIcon} />
               <h3>Quality Service</h3>
               <p>Our team uses the best products and techniques to ensure your car looks its best.</p>
+
             </Col>
             <Col md={4} className="text-center">
               <FaMapMarkerAlt className={styles.whyChooseUsIcon} />
               <h3>Convenience</h3>
               <p>We come to your location, whether it's your home or workplace, saving you valuable time and effort.</p>
+
             </Col>
 
             <Col md={4} className="text-center">
               <FaDollarSign className={styles.whyChooseUsIcon} />
               <h3>Affordable Prices</h3>
               <p>We offer competitive pricing for top-notch detailing services, giving you the best value for your money.</p>
+
             </Col>
           </Row>
         </Container>
@@ -105,6 +109,10 @@ export default function Home() {
 
       <section className={styles.servicesSection} >
         <Container className="py-5">
+          <div className="text-center">
+            <h2 className={styles.sectionHeading}>Our <strong>Services</strong></h2>
+
+          </div>
           <Row className="justify-content-center">
             {cardsData.map(card => {
               const IconComponent = card.icon;
