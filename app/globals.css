@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
-  --primary-color: #BB1E1E;
+  --primary-color: #39a0cd;
   /* Blue */
   --secondary-color: #2ecc71;
   /* Green */
@@ -19,7 +19,7 @@
   /* Dark Grey */
 
   /* PROPOSED NEW COLOUR PALLET - 27 JUNE */
-  --new-primary: #df1212;
+  --new-primary: #39a0cd;
   --new-secondary: #ED5F1E;
   --new-tertiary: #EF8C25;
   --new-background: #F0ECEC;

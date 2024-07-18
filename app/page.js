@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { FaCheck, FaFire, FaTools, FaUtensils, FaSoap, FaGasPump, FaHamburger } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaStar, FaDollarSign } from 'react-icons/fa';
 
 
 
@@ -42,14 +42,63 @@ export default function Home() {
               <h1 className={styles.heading}>We Bring the Shine to You</h1>
               <h2 className={styles.subHeading}>Exceptional Care Delivered to Your Location!</h2>
               <div className={styles.buttons}>
-                <Button className={styles.bookNow}>Book Now</Button>
-                <Button className={styles.viewServices}>View Services</Button>
+                <Link href="/contact" passHref >
+                  <span className="cta-button">
+
+                    Book Now
+                  </span>
+                </Link>
+                <Link href="/contact" passHref >
+                  <span className="cta-button">
+
+                    Our Services
+                  </span>
+                </Link>
               </div>
             </Col>
           </Row>
         </Container>
         <img src="/svgs/triangle.svg" alt="Divider" className={styles.svgDivider} />
       </div>
+
+      <section className={styles.whyChooseUsSection}>
+        <Container className="py-5">
+          <Row className="mb-5">
+            <Col md={6}>
+              <h2 className={styles.sectionHeading}>Why <strong>Choose Us?</strong></h2>
+              <p className={styles.subheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
+            </Col>
+            <Col md={6}>
+              <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
+              <Link href="/contact" passHref >
+                <span className="cta-button">
+
+                  Learn More
+                </span>
+              </Link>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col md={4} className="text-center">
+              <FaStar className={styles.whyChooseUsIcon} />
+              <h3>Quality Service</h3>
+              <p>Our team uses the best products and techniques to ensure your car looks its best.</p>
+            </Col>
+            <Col md={4} className="text-center">
+              <FaMapMarkerAlt className={styles.whyChooseUsIcon} />
+              <h3>Convenience</h3>
+              <p>We come to your location, whether it's your home or workplace, saving you valuable time and effort.</p>
+            </Col>
+
+            <Col md={4} className="text-center">
+              <FaDollarSign className={styles.whyChooseUsIcon} />
+              <h3>Affordable Prices</h3>
+              <p>We offer competitive pricing for top-notch detailing services, giving you the best value for your money.</p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
 
 
 
