@@ -59,6 +59,7 @@ html,
 body {
   overflow-x: hidden;
   width: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -125,11 +126,8 @@ li {
   /* Shift up slightly */
 }
 
-.container-divider {
-  height: 2px;
-  width: 80%;
-  background: var(--primary);
-  background: linear-gradient(90deg, var(--background-color), var(--primary-color), var(--background-color));
+.container {
+  min-width: 90%;
   margin: 15px auto;
 }
 

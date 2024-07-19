@@ -75,6 +75,30 @@ export default function Services() {
         },
     ]
 
+    const cardsData = [
+        {
+            id: 1,
+            title: 'Interior Car Detailing',
+            description: 'Meticulous interior car detailing service to keep your car\'s interior spotless and fresh.',
+            imgSrc: '/images/client-pics/interior1.jpg', // Replace with your image URL
+            link: '/our-services#interior'
+        },
+        {
+            id: 2,
+            title: 'Exterior Car Detailing',
+            description: 'Thorough exterior car detailing to restore and protect your car\'s paint and finish.',
+            imgSrc: '/images/client-pics/cleaning1.jpg', // Replace with your image URL
+            link: '/our-services#exterior'
+        },
+        {
+            id: 3,
+            title: 'Clay Bar and Premium Wax',
+            description: 'Advanced clay bar treatment and premium wax for a smooth and glossy car exterior.',
+            imgSrc: '/images/client-pics/exterior1.jpg', // Replace with your image URL
+            link: '/our-services#wax'
+        },
+    ];
+
     return (
         <>
 
@@ -82,23 +106,66 @@ export default function Services() {
                 <Container >
                     <Row>
                         <Col md={6} className={styles.overlay}>
-                            <h1 className={styles.heading}>Our Services</h1>
-                            <h2 className={styles.subHeading}>Exceptional Care Delivered to Your Location!</h2>
+                            <h1 className={styles.heading}>Our <strong>Services</strong></h1>
+                            <h2 className={styles.subHeading}>Revive Your Ride with an Unmatched Shine!</h2>
                             <div className={styles.buttons}>
-                                <Button className={styles.btnGallery}>See Gallery</Button>
-                                <Button className={styles.btnContactUs}>Contact Us</Button>
+                                <Link href="/contact" passHref >
+                                    <span className="cta-button">
+                                        Book Now
+                                    </span>
+                                </Link>
+                                <Link href="/our-services" passHref >
+                                    <span className="cta-button">
+                                        Our Services
+                                    </span>
+                                </Link>
                             </div>
                         </Col>
                     </Row>
                 </Container>
                 <img src="/svgs/triangle.svg" alt="Divider" className={styles.svgDivider} />
             </div>
-            <Link href="#interior">Interior</Link> &nbsp;
-            <Link href="#exterior">Exterior</Link> &nbsp;
-            <Link href="#wax">Wax</Link>
-            <section id="interior" className={styles.servicesSection} >
-                <h1 className="mx-5 px-5">Interior Detailing</h1>
+
+            <section className={styles.servicesSection} >
                 <Container className="py-5">
+                    <Row className="justify-content-center">
+                        {cardsData.map(card => {
+                            const IconComponent = card.icon;
+                            return (
+                                <Col key={card.id} lg={4} md={6} sm={12} className="mb-4">
+                                    <Link href={card.link} passHref style={{ textDecoration: 'none' }}>
+                                        <div className={styles.hoverCardLinkWrapper}>
+                                            <div className={styles.hoverCard} style={{ backgroundImage: `url(${card.imgSrc})` }}>
+                                                <div className={styles.hoverCardContent}>
+                                                    <h2 className={styles.hoverCardTitle}>{card.title}</h2>
+                                                    <p className={styles.hoverCardDescription}>{card.description}</p>
+                                                    <p className={styles.hoverCardLink}>Learn More</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </Col>
+                            );
+                        })}
+                    </Row>
+                </Container>
+            </section>
+
+            <section id="interior" className={styles.servicesSection} >
+                <Container className="pt-5">
+                    <Row className="mb-5 justify-content-center">
+                        <Col md={4}>
+                            <h2 className={styles.sectionHeading}>Interior <strong>Detailing</strong></h2>
+
+                            <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
+                        </Col>
+                        <Col md={4}>
+                            <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
+
+                        </Col>
+                    </Row>
+                </Container>
+                <Container>
                     <Row className="justify-content-center">
                         {interiorPlans.map(plan => {
                             const myList = plan.list.map((item) =>
@@ -115,7 +182,11 @@ export default function Services() {
                                             {myList}
                                         </div>
                                         <p className={styles.planPrice}>Price = {plan.price}</p>
-                                        <Button className={`${styles.btnBookNow}`}>Book Now</Button>
+                                        <Link href="/about-us" passHref >
+                                            <span className={styles.ctaButton}>
+                                                Book Now
+                                            </span>
+                                        </Link>
                                     </div>
                                 </Col>
                             );
@@ -126,7 +197,19 @@ export default function Services() {
             </section>
 
             <section id="exterior" className={styles.servicesSection} >
-                <h1 className="mx-5 px-5">Exterior Detailing</h1>
+                <Container className="pt-5">
+                    <Row className="mb-5 justify-content-center">
+                        <Col md={4}>
+                            <h2 className={styles.sectionHeading}>Exterior <strong>Detailing</strong></h2>
+
+                            <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
+                        </Col>
+                        <Col md={4}>
+                            <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
+
+                        </Col>
+                    </Row>
+                </Container>
                 <Container className="py-5">
                     <Row className="justify-content-center">
                         {exteriorPlans.map(plan => {
@@ -144,7 +227,11 @@ export default function Services() {
                                             {myList}
                                         </div>
                                         <p className={styles.planPrice}>{plan.price}</p>
-                                        <Button className={`${styles.btnBookNow}`}>Book Now</Button>
+                                        <Link href="/about-us" passHref >
+                                            <span className={styles.ctaButton}>
+                                                Book Now
+                                            </span>
+                                        </Link>
                                     </div>
                                 </Col>
                             );
@@ -154,8 +241,21 @@ export default function Services() {
                 </Container>
             </section>
 
+
             <section id="wax" className={styles.servicesSection} >
-                <h1 className="mx-5 px-5">Clay Bar & Premium Waxing</h1>
+                <Container className="pt-5">
+                    <Row className="mb-5 justify-content-center">
+                        <Col md={4}>
+                            <h2 className={styles.sectionHeading}>Interior <strong>Detailing</strong></h2>
+
+                            <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
+                        </Col>
+                        <Col md={4}>
+                            <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
+
+                        </Col>
+                    </Row>
+                </Container>
                 <Container className="py-5">
                     <Row className="justify-content-center">
                         {waxPlans.map(plan => {
@@ -173,7 +273,11 @@ export default function Services() {
                                             {myList}
                                         </div>
                                         <p className={styles.planPrice}>{plan.price}</p>
-                                        <Button className={`${styles.btnBookNow}`}>Book Now</Button>
+                                        <Link href="/about-us" passHref >
+                                            <span className={styles.ctaButton}>
+                                                Book Now
+                                            </span>
+                                        </Link>
                                     </div>
                                 </Col>
                             );

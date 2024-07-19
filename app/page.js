@@ -63,13 +63,13 @@ export default function Home() {
 
       <section className={styles.whyChooseUsSection}>
         <Container className="py-5">
-          <Row className="mb-5">
-            <Col md={6}>
+          <Row className="mb-5 justify-content-center">
+            <Col md={4}>
               <h2 className={styles.sectionHeading}>Why <strong>Choose Us?</strong></h2>
 
               <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
             </Col>
-            <Col md={6}>
+            <Col md={4}>
               <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
               <Link href="/about-us" passHref >
                 <span className="cta-button">
@@ -80,20 +80,20 @@ export default function Home() {
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col md={4} className="text-center">
+            <Col md={3} className="text-center">
               <FaStar className={styles.whyChooseUsIcon} />
               <h3>Quality Service</h3>
               <p>Our team uses the best products and techniques to ensure your car looks its best.</p>
 
             </Col>
-            <Col md={4} className="text-center">
+            <Col md={3} className="text-center">
               <FaMapMarkerAlt className={styles.whyChooseUsIcon} />
               <h3>Convenience</h3>
               <p>We come to your location, whether it's your home or workplace, saving you valuable time and effort.</p>
 
             </Col>
 
-            <Col md={4} className="text-center">
+            <Col md={3} className="text-center">
               <FaDollarSign className={styles.whyChooseUsIcon} />
               <h3>Affordable Prices</h3>
               <p>We offer competitive pricing for top-notch detailing services, giving you the best value for your money.</p>
@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       <section >
-        <ImageSlider beforeImage="/images/inside-before.jpg" afterImage="/images/inside-after.jpg"></ImageSlider>
+        <ImageSlider beforeImage="/images/mat-before.jpg" afterImage="/images/mat-after.jpg"></ImageSlider>
       </section>
     </>
 
