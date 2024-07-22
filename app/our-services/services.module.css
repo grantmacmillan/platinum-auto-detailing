@@ -96,21 +96,6 @@
     width: 100%;
 }
 
-/* .interiorSection {
-    background: rgb(248, 248, 248);
-    background: linear-gradient(180deg, rgba(248, 248, 248, 1) 70%, rgba(187, 245, 255, 1) 100%);
-}
-
-.exteriorSection {
-    background: rgb(187, 245, 255);
-    background: linear-gradient(180deg, rgba(187, 245, 255, 1) 0%, rgba(69, 198, 255, 1) 30%, rgba(69, 198, 255, 1) 70%, rgba(187, 245, 255, 1) 100%);
-}
-
-.waxSection {
-    background: rgb(187, 245, 255);
-    background: linear-gradient(180deg, rgba(187, 245, 255, 1) 0%, rgba(248, 248, 248, 1) 30%);
-} */
-
 .plan {
     flex: 1;
     display: flex;
