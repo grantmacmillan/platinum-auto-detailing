@@ -24,9 +24,9 @@
 }
 
 /* Media query for medium devices and smaller */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .main::before {
-    background: none;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   }
 }
 
@@ -36,6 +36,8 @@
 
 }
 
+
+
 .heading {
   font-weight: 400;
   font-size: 3rem;
@@ -43,6 +45,15 @@
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
   color: var(--text-light);
 
+}
+
+@media (max-width: 400px) {
+  .heading {
+
+    font-size: 2.5rem;
+
+
+  }
 }
 
 .heading strong {
@@ -66,6 +77,19 @@
 .buttons {
   display: flex;
   gap: 20px;
+}
+
+/* Add a media query for the breakpoint */
+@media (max-width: 400px) {
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    /* Adjust the gap for the stacked layout if needed */
+  }
 }
 
 

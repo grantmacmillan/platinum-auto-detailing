@@ -168,7 +168,8 @@
     font-size: 1.25rem;
     position: relative;
     overflow: hidden;
-    /* Ensures the shine effect stays within the button */
+    white-space: nowrap;
+
 }
 
 .cta-button:hover {
