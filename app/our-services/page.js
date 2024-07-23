@@ -59,7 +59,8 @@ export default function Services() {
             title: 'Gold Package',
             image: '/images/wash-car.jpg',
             price: 'Pricing may vary',
-            list: ['Includes Gold package',
+            list: ['Full exterior hand wash + dry',
+                'Full tire and rim cleaning + tire dressing',
                 'Clay bar and premium wax on your cars paint',]
         },
     ]
@@ -151,21 +152,23 @@ export default function Services() {
                 </Container>
             </section>
 
-            <section id="interior" className={styles.servicesSection} >
+            <section id="interior" className={`${styles.interiorSection} ${styles.servicesSection}`} >
                 <Container className="pt-5">
-                    <Row className="mb-5 justify-content-center">
-                        <Col md={4}>
-                            <h2 className={styles.sectionHeading}>Interior <strong>Detailing</strong></h2>
+                    <Row className="justify-content-center">
+                        <Col md={4} >
+                            <h2 className={styles.sectionHeading}><strong>Interior</strong> Detailing</h2>
 
                             <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
-                        </Col>
-                        <Col md={4}>
+                            <br />
                             <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
 
                         </Col>
+                        <Col md={4}>
+                            <Image src='/images/client-pics/exterior1.jpg' className={`my-3 ${styles.sectionImage}`}></Image>
+                        </Col>
                     </Row>
                 </Container>
-                <Container>
+                <Container className="pb-5">
                     <Row className="justify-content-center">
                         {interiorPlans.map(plan => {
                             const myList = plan.list.map((item) =>
@@ -196,21 +199,23 @@ export default function Services() {
                 </Container>
             </section>
 
-            <section id="exterior" className={styles.servicesSection} >
+            <section id="exterior" className={`${styles.exteriorSection} ${styles.servicesSection}`} >
                 <Container className="pt-5">
-                    <Row className="mb-5 justify-content-center">
+                    <Row className="justify-content-center">
                         <Col md={4}>
-                            <h2 className={styles.sectionHeading}>Exterior <strong>Detailing</strong></h2>
+                            <h2 className={styles.sectionHeading}><strong>Exterior</strong> Detailing</h2>
 
                             <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
-                        </Col>
-                        <Col md={4}>
+                            <br />
                             <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
 
                         </Col>
+                        <Col md={4}>
+                            <Image src='/images/client-pics/exterior1.jpg' className={`my-3 ${styles.sectionImage}`}></Image>
+                        </Col>
                     </Row>
                 </Container>
-                <Container className="py-5">
+                <Container className="pb-5">
                     <Row className="justify-content-center">
                         {exteriorPlans.map(plan => {
                             const myList = plan.list.map((item) =>
@@ -242,21 +247,33 @@ export default function Services() {
             </section>
 
 
-            <section id="wax" className={styles.servicesSection} >
+            <section id="wax" className={`${styles.waxSection} ${styles.servicesSection}`} >
                 <Container className="pt-5">
-                    <Row className="mb-5 justify-content-center">
+                    <Row className="justify-content-center">
                         <Col md={4}>
-                            <h2 className={styles.sectionHeading}>Interior <strong>Detailing</strong></h2>
+                            <h2 className={styles.sectionHeading}>Clay Bar & <strong>Premium Wax</strong></h2>
 
                             <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
-                        </Col>
-                        <Col md={4}>
+                            <br />
                             <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
 
                         </Col>
+                        <Col md={4}>
+                            <Image src='/images/client-pics/exterior1.jpg' className={`my-3 ${styles.sectionImage}`} />
+                        </Col>
+                        {/* <Col md={4} className={`my-3 ${styles.sectionImage}`}>
+
+                            <Image
+                                src="/images/client-pics/exterior1.jpg"
+                                alt="Clay Bar & Premium Waxing"
+                                width={500}
+                                height={500}
+                                className={styles.image}
+                            />
+                        </Col> */}
                     </Row>
                 </Container>
-                <Container className="py-5">
+                <Container className="pb-5">
                     <Row className="justify-content-center">
                         {waxPlans.map(plan => {
                             const myList = plan.list.map((item) =>
