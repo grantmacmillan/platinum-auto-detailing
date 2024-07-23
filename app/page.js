@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaStar, FaDollarSign } from 'react-icons/fa';
 import ImageSlider from "./components/ImageSlider";
+import Testimonials from "./components/Testimonials";
 
 
 export default function Home() {
@@ -138,6 +139,10 @@ export default function Home() {
 
       <section >
         <ImageSlider beforeImage="/images/mat-before.jpg" afterImage="/images/mat-after.jpg"></ImageSlider>
+      </section>
+
+      <section>
+        <Testimonials />
       </section>
     </>
 

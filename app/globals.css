@@ -172,6 +172,63 @@ li {
 }
 
 
+
+.testimonial-blockquote {
+  color: var(--text);
+  padding: 1rem 2rem;
+  font-style: italic;
+}
+
+.testimonial-star {
+  color: #E6B72D;
+  padding: 1px;
+
+}
+
+.reviewer-name {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 1.75rem !important;
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  /* Center the testimonial item */
+}
+
+.testimonial-section-heading {
+  color: var(--text-light);
+  font-weight: 600;
+  text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary) !important;
+  font-size: 2.5rem;
+}
+
+.testimonial-section-subheading {
+  color: var(--text) !important;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.testimonials-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.testimonials-section h5 {
+  font-size: 1.75rem;
+  font-weight: 300px;
+}
+
+
+
 .animated-section {
   opacity: 0;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
