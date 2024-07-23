@@ -16,7 +16,7 @@ export default function Services() {
             id: '1',
             title: 'Silver Package',
             image: '/images/wash-car.jpg',
-            price: 'Price = $80',
+            price: '$80',
             list: ['Full vacuuming throughout the entire vehicle',
                 'Wipe down on front dash and console, doors, and seats']
         },
@@ -24,7 +24,7 @@ export default function Services() {
             id: '2',
             title: 'Gold Package',
             image: '/images/wash-car.jpg',
-            price: 'Price = $150',
+            price: '$150',
             list: ['Full vacuuming throughout the entire vehicle',
                 'Removable mat and removable carpet shampoo',
                 'Driver side pedal cleanse',
@@ -34,7 +34,7 @@ export default function Services() {
             id: '3',
             title: 'Platinum Package',
             image: '/images/wash-car.jpg',
-            price: 'Price = $200',
+            price: '$200',
             list: ['Full vacuuming throughout the entire vehicle',
                 'Removable mat and removable carpet shampoo',
                 'Driver side pedal cleanse',
@@ -50,7 +50,7 @@ export default function Services() {
             id: '1',
             title: 'Silver Package',
             image: '/images/wash-car.jpg',
-            price: 'Price = $40',
+            price: '$40',
             list: ['Full exterior hand wash + dry',
                 'Full tire and rim cleaning + tire dressing']
         },
@@ -70,7 +70,7 @@ export default function Services() {
             id: '1',
             title: 'Wax Package',
             image: '/images/wash-car.jpg',
-            price: 'Price = $40',
+            price: '$40',
             list: ['Full exterior hand wash + dry',
                 'Full tire and rim cleaning + tire dressing']
         },
@@ -81,7 +81,7 @@ export default function Services() {
             id: 1,
             title: 'Interior Car Detailing',
             description: 'Meticulous interior car detailing service to keep your car\'s interior spotless and fresh.',
-            imgSrc: '/images/client-pics/interior1.jpg', // Replace with your image URL
+            imgSrc: '/images/client-pics/inside3.jpg', // Replace with your image URL
             link: '/our-services#interior'
         },
         {
@@ -164,7 +164,7 @@ export default function Services() {
 
                         </Col>
                         <Col md={4}>
-                            <Image src='/images/client-pics/exterior1.jpg' className={`my-3 ${styles.sectionImage}`}></Image>
+                            <Image src='/images/client-pics/inside5.jpg' className={`my-3 ${styles.sectionImage}`}></Image>
                         </Col>
                     </Row>
                 </Container>

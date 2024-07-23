@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+import { Titillium_Web } from "next/font/google";
 import './globals.css';
 import CustomFooter from "./components/CustomFooter";
 import CustomNavbar from "./components/CustomNavbar";
@@ -9,14 +9,11 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import './buttons.css';
 import './navbar.css';
-
 import './dividers.css';
 
-
-
-const poppins = Poppins({
+const titilliumWeb = Titillium_Web({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+  weight: ["200", "300", "400", "600", "700", "900"]
 });
 
 export const metadata = {
@@ -27,8 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
-      <body className={poppins.className}>
+      <body className={titilliumWeb.className}>
         <CustomNavbar />
         <main>{children}</main>
         <CustomFooter />

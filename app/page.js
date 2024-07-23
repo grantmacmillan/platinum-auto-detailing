@@ -14,7 +14,7 @@ export default function Home() {
       id: 1,
       title: 'Interior Car Detailing',
       description: 'Meticulous interior car detailing service to keep your car\'s interior spotless and fresh.',
-      imgSrc: '/images/client-pics/interior1.jpg', // Replace with your image URL
+      imgSrc: '/images/client-pics/inside3.jpg', // Replace with your image URL
       link: '/our-services#interior'
     },
     {
