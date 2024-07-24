@@ -53,7 +53,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-        <img src="/svgs/triangle.svg" alt="Divider" className={styles.svgDivider} />
+        <img src="/svgs/triangle-landing.svg" alt="Divider" className={styles.svgDivider} />
       </div>
 
       <section className={styles.whyChooseUsSection}>

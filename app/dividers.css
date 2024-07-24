@@ -181,3 +181,52 @@
     background: linear-gradient(90deg, var(--background-color), var(--new-primary), var(--background-color));
     margin: 15px auto;
 }
+
+
+
+
+
+
+
+
+.custom-shape-divider-bottom-1721843280 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1721843280 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1721843280 .shape-fill {
+    fill: #F8F8F8;
+}
+
+
+.custom-shape-divider-top-1721843337 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1721843337 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1721843337 .shape-fill {
+    fill: var(--container-color-dark);
+}

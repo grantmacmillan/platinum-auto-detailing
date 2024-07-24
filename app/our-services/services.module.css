@@ -118,6 +118,7 @@
     scroll-margin-top: 200px;
     margin-bottom: -15px;
     width: 100%;
+    background-color: var(--container-color-dark);
 }
 
 .plan {
@@ -433,7 +434,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-
+.InteriorSection {}
 
 
 

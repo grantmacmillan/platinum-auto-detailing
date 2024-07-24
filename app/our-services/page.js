@@ -113,12 +113,7 @@ export default function Services() {
                                         Book Now
                                     </span>
                                 </Link>
-                                <Link href="/our-services" passHref >
-                                    <span className="cta-button">
 
-                                        Our Services
-                                    </span>
-                                </Link>
                             </div>
                         </Col>
                     </Row>
@@ -127,7 +122,7 @@ export default function Services() {
             </div>
 
             <section className={styles.servicesSection} >
-                <Container className="py-5">
+                <Container className="py-5 mt-0">
                     <Row className="justify-content-center">
                         {cardsData.map(card => {
                             const IconComponent = card.icon;
@@ -151,7 +146,14 @@ export default function Services() {
                 </Container>
             </section>
 
-            <section id="interior"  >
+            <div className="custom-shape-divider-top-1721843337">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
+                </svg>
+            </div>
+
+
+            <section id="interior" className={styles.InteriorSection}>
                 <Container className="pt-5">
                     <Row className="justify-content-center">
                         <Col md={4} >
@@ -164,7 +166,7 @@ export default function Services() {
                             </p>
 
                         </Col>
-                        <Col md={4}>
+                        <Col md={6}>
                             <Image src='/images/client-pics/inside5.jpg' className={`my-3 ${styles.sectionImage}`}></Image>
                         </Col>
                     </Row>
@@ -260,26 +262,19 @@ export default function Services() {
             <section id="exterior" >
                 <Container className="pt-5">
                     <Row className="justify-content-center">
-                        <Col md={4} >
+                        <Col lg={{ span: 4, order: 1 }} xs={{ span: 12, order: 2 }}>
+                            <Image src='/images/client-pics/exterior1.jpg' className={`my-3 ${styles.sectionImage}`} />
+                        </Col>
+                        <Col lg={{ span: 6, order: 2 }} xs={{ span: 12, order: 1 }}>
                             <h2 className={styles.sectionHeading}><strong>Exterior</strong> Detailing</h2>
 
                             <p className={styles.sectioinSubheading}><strong className={styles.convenience}>Transform</strong> Your Car's Exterior</p>
                             <br />
-                            <p>Our exterior detailing services are crafted to restore and protect your vehicle’s exterior to its finest condition. At Platinum Auto Detailing, we use high-quality products and expert techniques to deliver a thorough clean and polish that not only enhances your car’s appearance but also protects its paint and finish. Whether it's a basic wash or a premium wax, we ensure your car looks its best.
+                            <p>Our exterior detailing services are crafted to restore and protect your vehicle’s exterior to its finest condition. At Platinum Auto Detailing, we use high-quality products and expert techniques to deliver a thorough clean and polish that not only enhances your car’s appearance but also protects its paint and finish. Whether it's a basic wash or a premium wax, we ensure your car looks its best.</p>
 
-                            </p>
+                            <p>Our premium wax application goes beyond its stunning aesthetic results. It forms a barrier that safeguards your car's paint from UV rays, harsh weather, and environmental pollutants, ensuring your vehicle remains in pristine condition. By preserving your vehicle's exterior, you are extending its lifespan and this service is a safeguard against potential deterioration and costly repairs.</p>
 
-                            <p>Our premium wax application goes beyond its stunning aesthetic results. It forms a barrier that safeguards your car's paint from UV rays, harsh weather, and environmental pollutants, ensuring your vehicle remains in pristine condition. By preserving your vehicle's exterior, you are extending its lifespan and this service is a safeguard against potential deterioration and costly repairs.
-
-
-                            </p>
-                            <p>
-                                The outcome is not merely a car that looks exquisite; it's a testament to the care you invest in maintaining the elegance, longevity, and value of your vehicle.
-                            </p>
-
-                        </Col>
-                        <Col md={4}>
-                            <Image src='/images/client-pics/exterior1.jpg' className={`my-3 ${styles.sectionImage}`}></Image>
+                            <p>The outcome is not merely a car that looks exquisite; it's a testament to the care you invest in maintaining the elegance, longevity, and value of your vehicle.</p>
                         </Col>
                     </Row>
                 </Container>

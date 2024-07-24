@@ -92,7 +92,7 @@
 
 
 .cssbuttonsIoButton {
-
+    margin-left: auto;
     background: linear-gradient(14deg, rgba(173, 216, 230, 1) 0%, rgb(47, 96, 231) 100%);
     color: white;
     padding: 0.35em;
@@ -110,6 +110,7 @@
     padding-right: 3.3em;
     cursor: pointer;
     text-decoration: none;
+    width: fit-content;
     /* Ensures the link looks like a button */
 }
 
