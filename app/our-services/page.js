@@ -177,7 +177,6 @@ export default function Services() {
                                 <div className="pricing-card-body">
                                     <p className="pricing-card-title-small silver-text">$80</p>
                                     <p className="pricing-card-title silver-style">SILVER PACKAGE</p>
-                                    <div className='container-divider'></div>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Full vacuuming throughout the entire vehicle.</li>
                                         <li><FaCheck /> Wipe down on front dash and console, doors, and seats.</li>
@@ -203,7 +202,6 @@ export default function Services() {
                                 <div className="pricing-card-body">
                                     <p className="pricing-card-title-small gold-text">Starting at $150</p>
                                     <h2 className="pricing-card-title gold-style">GOLD PACKAGE</h2>
-                                    <div className='container-divider'></div>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Includes all items from the Silver Package.</li>
                                         <li><FaCheck /> Removable mat and removable carpet shampoo.</li>
@@ -231,7 +229,6 @@ export default function Services() {
                                 <div className="pricing-card-body">
                                     <p className="pricing-card-title-small">Starting at $200</p>
                                     <h2 className="pricing-card-title platinum-style">PLATINUM PACKAGE</h2>
-                                    <div className='container-divider'></div>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Includes all items from the Gold Package.</li>
                                         <li><FaCheck /> Full shampoo and deep clean on all interior floor carpets.</li>
@@ -295,7 +292,6 @@ export default function Services() {
                                 <div className="pricing-card-body">
                                     <p className="pricing-card-title-small gold-text">$40</p>
                                     <h2 className="pricing-card-title gold-style">GOLD PACKAGE</h2>
-                                    <div className='container-divider'></div>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Full exterior hand wash & dry.</li>
                                         <li><FaCheck /> Full tire and rim cleaning & tire dressing.</li>
@@ -322,7 +318,6 @@ export default function Services() {
                                 <div className="pricing-card-body">
                                     <p className="pricing-card-title-small">Prices may vary depending on vehicle size.</p>
                                     <h2 className="pricing-card-title platinum-style">PLATINUM PACKAGE</h2>
-                                    <div className='container-divider'></div>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Includes all items from the Gold Package.</li>
                                         <li><FaCheck /> Clay bar and premium wax on your cars paint.</li>
