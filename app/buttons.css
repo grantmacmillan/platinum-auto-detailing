@@ -93,7 +93,7 @@
 
 .cssbuttonsIoButton {
 
-    background: var(--primary-color);
+    background: linear-gradient(14deg, rgba(173, 216, 230, 1) 0%, rgb(47, 96, 231) 100%);
     color: white;
     padding: 0.35em;
     padding-left: 1.2em;

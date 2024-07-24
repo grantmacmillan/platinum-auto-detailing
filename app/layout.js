@@ -11,6 +11,9 @@ import './buttons.css';
 import './navbar.css';
 import './dividers.css';
 
+import './our-services/pricing.css';
+
+
 const titilliumWeb = Titillium_Web({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "900"]

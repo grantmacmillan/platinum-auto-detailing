@@ -24,9 +24,9 @@
 }
 
 /* Media query for medium devices and smaller */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .main::before {
-        background: none;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     }
 }
 
@@ -36,6 +36,8 @@
 
 }
 
+
+
 .heading {
     font-weight: 400;
     font-size: 3rem;
@@ -43,6 +45,15 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     color: var(--text-light);
 
+}
+
+@media (max-width: 400px) {
+    .heading {
+
+        font-size: 2.5rem;
+
+
+    }
 }
 
 .heading strong {
@@ -66,6 +77,19 @@
 .buttons {
     display: flex;
     gap: 20px;
+}
+
+/* Add a media query for the breakpoint */
+@media (max-width: 400px) {
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        /* Adjust the gap for the stacked layout if needed */
+    }
 }
 
 .btnBookNow {
@@ -103,24 +127,65 @@
     justify-content: flex-start;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--background-color);
 }
 
-.plan:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.planIcon {
+    color: inherit;
+    /* Ensures the icon color matches the text color */
+    margin-left: auto;
+    /* Pushes the icon to the far right */
 }
 
-.plan h2 {
+.planImage {
+    display: block;
+    margin: 0 auto;
     color: var(--new-primary);
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    /* Adjust color as needed */
+}
+
+
+.planHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planTitle {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.planIcon {
+    color: inherit;
+    font-size: 2rem !important;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
+    /* Ensures the icon color matches the text color */
+}
+
+
+
+/* Specific title styles for different plans */
+.goldpackage {
+    color: #FFD700 !important;
+    /* Gold color */
+}
+
+.silverpackage {
+    color: #C0C0C0 !important;
+    /* Silver color */
+}
+
+.platinumpackage {
+    color: #3297cd !important;
+    /* Bronze color */
 }
 
 .planPrice {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: green;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #28a745;
+    margin-top: 10px;
 }
 
 .list {
@@ -132,10 +197,7 @@
     box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.plan:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
+
 
 .hoverCard {
     width: 100%;
@@ -369,4 +431,57 @@
     top: -50%;
     left: 150%;
     transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+.pricing-container {
+    padding-top: 60px;
+}
+
+.pricing-card {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+
+
+    opacity: 0;
+    transform: scale(0);
+    animation: grow 0.5s ease-out forwards;
+}
+
+.pricing-card-body {
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.pricing-card-title {
+    font-size: 2rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-weight: 400;
+    color: var(--text);
+}
+
+
+
+.btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.pricing-card-title-small {
+    font-weight: 300;
+    margin-bottom: 2px;
+    color: var(--primary-color);
+}
+
+
+
+.pricing-card-footer {
+    padding: 1rem 2rem;
+    color: #000;
 }

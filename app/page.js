@@ -24,13 +24,7 @@ export default function Home() {
       imgSrc: '/images/client-pics/cleaning1.jpg', // Replace with your image URL
       link: '/our-services#exterior'
     },
-    {
-      id: 3,
-      title: 'Clay Bar and Premium Wax',
-      description: 'Advanced clay bar treatment and premium wax for a smooth and glossy car exterior.',
-      imgSrc: '/images/client-pics/exterior1.jpg', // Replace with your image URL
-      link: '/our-services#wax'
-    },
+
   ];
 
   return (
@@ -118,7 +112,7 @@ export default function Home() {
             {cardsData.map(card => {
               const IconComponent = card.icon;
               return (
-                <Col key={card.id} lg={4} md={6} sm={12} className="mb-4">
+                <Col key={card.id} lg={6} md={6} sm={12} className="mb-4">
                   <Link href={card.link} passHref style={{ textDecoration: 'none' }}>
                     <div className={styles.hoverCardLinkWrapper}>
                       <div className={styles.hoverCard} style={{ backgroundImage: `url(${card.imgSrc})` }}>
