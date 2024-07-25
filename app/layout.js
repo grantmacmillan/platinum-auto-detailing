@@ -10,6 +10,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './buttons.css';
 import './navbar.css';
 import './dividers.css';
+import './contact.css';
 
 import './our-services/pricing.css';
 

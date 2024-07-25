@@ -1,4 +1,6 @@
 
+import ContactForm from "../components/ContactForm";
+import styles from './contact.module.css';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -9,8 +11,11 @@ export const metadata = {
 
 export default function Contact() {
     return (
-        <div>
-            <h1>Contact</h1>
+        <div className={styles.main}>
+            <div className={styles.contactContainer}>
+                <ContactForm />
+
+            </div>
         </div>
 
     );

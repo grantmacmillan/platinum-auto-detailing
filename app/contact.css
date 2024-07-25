@@ -1,0 +1,107 @@
+.iframe {
+    width: 100%;
+    height: 450px;
+    zoom: 1.3;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    margin: 0 auto;
+    padding: 40px;
+    color: var(--text-light);
+    background-color: var(--container-color-dark);
+}
+
+.contact-heading {
+    color: var(--new-primary) !important;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact-subheading {
+    color: var(--new-primary) !important;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.75rem;
+
+}
+
+.form-label {
+    color: var(--text-light);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.home-contact-bullets {
+    color: var(--text-light);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+}
+
+.contact-link {
+    color: var(--text-light);
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contact-link::after {
+    content: '';
+    display: block;
+    border-bottom: solid 2px var(--new-primary);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .25s ease-in-out;
+}
+
+
+.contact-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.status-message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+.contact-info {
+    color: white;
+}
+
+.form-input {
+    background-color: var(--container-color-dark);
+    border-color: white;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
+}
+
+.form-input:hover {
+    background-color: var(--container-color-dark);
+    border-color: var(--new-primary);
+    box-shadow: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.form-input:hover::after {
+    background-color: var(--container-color-dark);
+    border-color: var(--new-primary);
+    box-shadow: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.form-input:focus {
+    background-color: var(--container-color-dark);
+    border-color: var(--new-primary);
+    box-shadow: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
