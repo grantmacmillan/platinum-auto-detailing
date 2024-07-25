@@ -28,7 +28,7 @@ const CustomFooter = () => {
                                 </div>
                             </Navbar.Brand>
                             <p className="col-md-12 mt-3">
-                                Platinum Car Detailing
+                                Premium Car Detailing
                             </p>
                         </Col>
                         <Col md={2} sm={12}>
