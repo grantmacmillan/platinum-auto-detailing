@@ -33,9 +33,9 @@ const CustomFooter = () => {
                         </Col>
                         <Col md={2} sm={12}>
                             <h4>Helpful Links</h4>
-                            <p><Link className='contact-link' href="/our-services">Services</Link></p>
                             <p><Link className='contact-link' href="/our-services/#interior">Interior Detailing</Link></p>
-                            <p><Link className='contact-link' href="/our-servies/#exterior">Exterior Detailing</Link></p>
+                            <p><Link className='contact-link' href="/our-services/#exterior">Exterior Detailing</Link></p>
+                            <p><Link className='contact-link' href="/contact">Contact</Link></p>
                             <p><Link className='contact-link' href="/about-us">About Us</Link></p>
                             <p><Link className='contact-link' href="/gallery">Gallery</Link></p>
                         </Col>
