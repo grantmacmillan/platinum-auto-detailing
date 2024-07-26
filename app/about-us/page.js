@@ -30,7 +30,7 @@ const AboutUs = () => {
                                     At Platinum Auto Detailing, we go above and beyond to ensure our customers are completely satisfied. We use the best products and techniques available to ensure your car is as clean and fresh as possible. Our team is dedicated to delivering exceptional results every time.                                </p>
 
                                 <p className={styles.landingDescription}>
-                                    To provide the utmost convenience, we come directly to you. Whether you're at home or at work, we perform the cleaning on-site, saving you time and hassle. Our mobile service ensures you don't have to worry about dropping off and picking up your vehicle.
+                                    To provide the utmost convenience, we come directly to you. we perform the cleaning at your home, saving you time and hassle. Our mobile service ensures you don't have to worry about dropping off and picking up your vehicle.
                                 </p>
 
                                 <p className={styles.landingDescription}>

@@ -21,7 +21,7 @@ const CustomFooter = () => {
             <div className='footer'>
                 <Container className='py-4'>
                     <Row className='justify-content-center'>
-                        <Col md={2} sm={12}>
+                        <Col xl={2} lg={3} md={4} sm={12}>
                             <Navbar.Brand as={Link} href="/" passHref>
                                 <div className="logo-container">
                                     <Image src={Logo} alt="Platinum Car Detailing Logo" width={175} height={50} layout="intrinsic" />
@@ -31,7 +31,7 @@ const CustomFooter = () => {
                                 Premium Car Detailing
                             </p>
                         </Col>
-                        <Col md={2} sm={12}>
+                        <Col xl={2} lg={3} md={4} sm={12}>
                             <h4>Helpful Links</h4>
                             <p><Link className='contact-link' href="/our-services/#interior">Interior Detailing</Link></p>
                             <p><Link className='contact-link' href="/our-services/#exterior">Exterior Detailing</Link></p>
@@ -39,10 +39,10 @@ const CustomFooter = () => {
                             <p><Link className='contact-link' href="/about-us">About Us</Link></p>
                             <p><Link className='contact-link' href="/gallery">Gallery</Link></p>
                         </Col>
-                        <Col md={3} sm={12}>
+                        <Col xl={2} lg={3} md={4} sm={12}>
                             <h4>Contact Information</h4>
                             <p><Link className='contact-link' href="mailto:autodetailing.platinum@gmail.com" target='_blank'>Email: Autodetailing.platinum@gmail.com</Link></p>
-                            <p><Link className='contact-link' href="tel:44544" target='_blank'>Phone: +1 (647) 482-1898</Link></p>
+                            <p><Link className='contact-link' href="tel:+16475293354" target='_blank'>Phone: +1 (647) 529-3354</Link></p>
                             <h4 className='footer-heading'>Follow Us</h4>
                             <div className="d-flex justify-content-start align-items-center mt-2">
                                 <a href="https://instagram.com/platinumamd" aria-label="Instagram" target="_blank" rel="noopener noreferrer">

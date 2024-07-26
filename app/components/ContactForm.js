@@ -81,7 +81,7 @@ export default function ContactForm() {
                         <h1>Have Questions?<br />Get In Touch</h1>
                         <p className='contact-info'>Get in touch with Platinum Auto Detailing for a free quote and to get your vehicle professionally detailed and looking its best!</p>
                         <h2 className='contact-heading'>Contact Information</h2>
-                        <p className='home-contact-bullets'><FaPhone className='contact-icons' /> <a className='contact-link' href="tel:+16474821898"> +1 (647) 482-1898</a></p>
+                        <p className='home-contact-bullets'><FaPhone className='contact-icons' /> <a className='contact-link' href="tel:+16475293354"> +1 (647) 529-3354</a></p>
                         <p className='home-contact-bullets'><FaEnvelope className='contact-icons' /> <a className='contact-link' href="mailto:Autodetailing.platinum@gmail.com"> Autodetailing.platinum@gmail.com</a></p>
                         <p className='home-contact-bullets'><FaClock className='contact-icons' /> Mon-Sun: 8 AM - 7 PM</p>
 

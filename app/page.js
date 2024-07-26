@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       <section >
-        <ImageSlider beforeImage="/images/mat-before.jpg" afterImage="/images/mat-after.jpg"></ImageSlider>
+        <ImageSlider beforeImage="/images/before3.png" afterImage="/images/after3.png"></ImageSlider>
       </section>
 
       <section className="testimonials-section ">
