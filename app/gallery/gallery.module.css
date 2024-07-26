@@ -1,0 +1,43 @@
+.page {
+    padding-top: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading {
+    color: var(--text-light) !important;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary) !important;
+    font-size: 2.5rem;
+}
+
+.section-subheading {
+    color: #a5aeb5 !important;
+
+    font-weight: 300;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    /* Adjust this to change the aspect ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container while maintaining its aspect ratio */
+    border-radius: 8px;
+}
+
+.landingContainer {
+    background-color: var(--container-color-dark);
+}
