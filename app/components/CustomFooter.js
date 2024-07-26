@@ -43,7 +43,7 @@ const CustomFooter = () => {
                             <h4>Contact Information</h4>
                             <p><Link className='contact-link' href="mailto:autodetailing.platinum@gmail.com" target='_blank'>Email: Autodetailing.platinum@gmail.com</Link></p>
                             <p><Link className='contact-link' href="tel:44544" target='_blank'>Phone: +1 (647) 482-1898</Link></p>
-                            <h4 className='footer-heading'>Our Socials</h4>
+                            <h4 className='footer-heading'>Follow Us</h4>
                             <div className="d-flex justify-content-start align-items-center mt-2">
                                 <a href="https://instagram.com/platinumamd" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                                     <FaInstagram size={30} className="icon-style-light" />

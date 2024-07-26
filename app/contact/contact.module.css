@@ -4,4 +4,6 @@
 
 .contactContainer {
     padding-top: 150px;
+    background-color: var(--container-color-dark);
+
 }
