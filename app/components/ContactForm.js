@@ -10,11 +10,21 @@ export default function ContactForm() {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [reason, setReason] = useState('Interior Cleaning');
+    const [reason, setReason] = useState([]);
     const [message, setMessage] = useState('');
     const [address, setAddress] = useState('');
     const [status, setStatus] = useState('');
     const [submitted, setSubmitted] = useState(false);
+
+
+    const handleReasonChange = (e) => {
+        const { value, checked } = e.target;
+        if (checked) {
+            setReason([...reason, value]);
+        } else {
+            setReason(reason.filter((item) => item !== value));
+        }
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -24,7 +34,7 @@ export default function ContactForm() {
         formData.append('email', email);
         formData.append('phone', phone);
         formData.append('address', address);
-        formData.append('reason', reason);
+        formData.append('reason', reason.join(', '));
 
         formData.append('message', message);
 
@@ -156,18 +166,81 @@ export default function ContactForm() {
                             />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="reason" className="form-label">*Reason for Contacting:</label>
-                            <select
-                                id="reason"
-                                className="form-control form-input"
-                                value={reason}
-                                onChange={(e) => setReason(e.target.value)}
-                                required
-                            >
-                                <option value="Interior Cleaning">Interior Cleaning</option>
-                                <option value="Exterior Detailing">Exterior Detailing</option>
-                                <option value="Other">Other</option>
-                            </select>
+                            <label htmlFor="reason" className="form-label">*Reason for Contacting (Select all that apply):</label>
+                            <div id="reason">
+                                <div className="form-check">
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
+                                        id="interiorCleaningSilverPackage"
+                                        value="Interior Cleaning - Silver Package"
+                                        onChange={handleReasonChange}
+                                    />
+                                    <label className="form-check-label" htmlFor="interiorCleaningSilverPackage">
+                                        Interior Cleaning - Silver Package
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
+                                        id="interiorCleaningGoldPackage"
+                                        value="Interior Cleaning - Gold Package"
+                                        onChange={handleReasonChange}
+                                    />
+                                    <label className="form-check-label" htmlFor="interiorCleaningGoldPackage">
+                                        Interior Cleaning - Gold Package
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
+                                        id="interiorCleaningPlatinumPackage"
+                                        value="Interior Cleaning - Platinum Package"
+                                        onChange={handleReasonChange}
+                                    />
+                                    <label className="form-check-label" htmlFor="interiorCleaningPlatinumPackage">
+                                        Interior Cleaning - Platinum Package
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
+                                        id="ExteriorDetailingGoldPackage"
+                                        value="Exterior Detailing - Gold Package"
+                                        onChange={handleReasonChange}
+                                    />
+                                    <label className="form-check-label" htmlFor="ExteriorDetailingGoldPackage">
+                                        Exterior Cleaning - Gold Package
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
+                                        id="ExteriorDetailingPlatinumPackage"
+                                        value="Exterior Detailing - Platinum Package"
+                                        onChange={handleReasonChange}
+                                    />
+                                    <label className="form-check-label" htmlFor="ExteriorDetailingPlatinumPackage">
+                                        Exterior Detailing - Platinum Package
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
+                                        id="other"
+                                        value="Other"
+                                        onChange={handleReasonChange}
+                                    />
+                                    <label className="form-check-label" htmlFor="other">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="mb-3">

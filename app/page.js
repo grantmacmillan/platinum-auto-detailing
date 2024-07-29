@@ -65,7 +65,7 @@ export default function Home() {
               <p className={styles.sectioinSubheading}>Unmatched <strong>Quality,</strong> Unbeatable <strong className={styles.convenience}>Convenience</strong></p>
             </Col>
             <Col md={4}>
-              <p>We bring top-notch car detailing services directly to your home or workplace, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
+              <p>We bring top-notch car detailing services directly to your home, saving you time and effort. Our professional team uses high-quality products and techniques to ensure your vehicle looks its best.</p>
               <Link href="/about-us" passHref >
                 <span className="cta-button">
 
@@ -84,7 +84,7 @@ export default function Home() {
             <Col md={3} className="text-center">
               <FaMapMarkerAlt className={styles.whyChooseUsIcon} />
               <h3>Convenience</h3>
-              <p>We come to your location, whether it's your home or workplace, saving you valuable time and effort.</p>
+              <p>We come to your location, whether it's your home, saving you valuable time and effort.</p>
 
             </Col>
 
