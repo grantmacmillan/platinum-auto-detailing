@@ -8,7 +8,16 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const metadata = {
     title: 'Our Services | Platinum Auto Detailing',
-
+    description: 'Explore the premium auto detailing services offered by Platinum Auto Detailing. From interior to exterior detailing, we provide top-notch services to keep your car in pristine condition.',
+    keywords: 'Platinum Auto Detailing services, car detailing, interior detailing, exterior detailing, mobile car cleaning, auto detailing packages, vehicle maintenance',
+    metadataBase: new URL(BASE_URL),
+    openGraph: {
+        title: 'Our Services | Platinum Auto Detailing',
+        description: 'Explore the premium auto detailing services offered by Platinum Auto Detailing. From interior to exterior detailing, we provide top-notch services to keep your car in pristine condition.',
+        type: 'website',
+        url: `${BASE_URL}/our-services`,
+        site_name: 'Platinum Auto Detailing'
+    },
 };
 
 export default function Services() {

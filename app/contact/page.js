@@ -7,8 +7,18 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const metadata = {
     title: 'Contact | Platinum Auto Detailing',
-
+    description: 'Get in touch with Platinum Auto Detailing for premium car detailing services. Contact us to book an appointment, ask questions, or learn more about our services. We are here to help keep your vehicle in pristine condition.',
+    keywords: 'Platinum Auto Detailing contact, car detailing services, book an appointment, car care inquiries, auto detailing questions',
+    metadataBase: new URL(BASE_URL),
+    openGraph: {
+        title: 'Contact | Platinum Auto Detailing',
+        description: 'Get in touch with Platinum Auto Detailing for premium car detailing services. Contact us to book an appointment, ask questions, or learn more about our services. We are here to help keep your vehicle in pristine condition.',
+        type: 'website',
+        url: `${BASE_URL}/contact`,
+        site_name: 'Platinum Auto Detailing'
+    },
 };
+
 
 export default function Contact() {
     return (

@@ -7,6 +7,22 @@ import ImageSlider from "./components/ImageSlider";
 import Testimonials from "./components/Testimonials";
 
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
+export const metadata = {
+  title: 'Platinum Auto Detailing - Premium Interior and Exterior Car Detailing Services',
+  description: 'Platinum Auto Detailing offers premium interior and exterior car detailing services delivered directly to your location. Experience unmatched quality and convenience with our professional team.',
+  keywords: 'Platinum Auto Detailing, car detailing, interior detailing, exterior detailing, mobile car cleaning, auto detailing services, vehicle maintenance, car care',
+  metadataBase: new URL(BASE_URL),
+  openGraph: {
+    title: 'Platinum Auto Detailing - Premium Interior and Exterior Car Detailing Services',
+    description: 'Platinum Auto Detailing offers premium interior and exterior car detailing services delivered directly to your location. Experience unmatched quality and convenience with our professional team.',
+    type: 'website',
+    url: `${BASE_URL}/`,
+    site_name: 'Platinum Auto Detailing'
+  },
+};
+
 export default function Home() {
 
   const cardsData = [

@@ -7,8 +7,18 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const metadata = {
     title: 'Gallery | Platinum Auto Detailing',
-
+    description: 'Explore the gallery of Platinum Auto Detailing to see the exceptional quality and meticulous attention to detail we bring to each auto detailing project. From everyday vehicles to luxury cars, our gallery showcases our commitment to excellence.',
+    keywords: 'Platinum Auto Detailing gallery, car detailing photos, interior detailing, exterior detailing, auto detailing projects, vehicle maintenance, car care results',
+    metadataBase: new URL(BASE_URL),
+    openGraph: {
+        title: 'Gallery | Platinum Auto Detailing',
+        description: 'Explore the gallery of Platinum Auto Detailing to see the exceptional quality and meticulous attention to detail we bring to each auto detailing project. From everyday vehicles to luxury cars, our gallery showcases our commitment to excellence.',
+        type: 'website',
+        url: `${BASE_URL}/gallery`,
+        site_name: 'Platinum Auto Detailing'
+    },
 };
+
 
 const images = [
     '/images/client-pics/lambo2.jpg',
