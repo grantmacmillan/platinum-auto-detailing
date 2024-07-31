@@ -3,7 +3,7 @@ import styles from "./services.module.css";
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 import { FaMedal, FaCheck, FaArrowRight } from 'react-icons/fa';
 
-
+//comment
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const metadata = {
