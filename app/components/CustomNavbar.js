@@ -33,7 +33,7 @@ const CustomNavbar = () => {
     return (
         <>
             <Navbar expand="lg" className={`navbar-container ${scrolled ? 'scrolled' : ''} ${expanded ? 'navbar-expanded' : ''}`} expanded={expanded} onToggle={() => setExpanded(!expanded)}>
-                <Container>
+                <Container className='mt-0 mb-0'>
                     <Navbar.Brand as={Link} href="/" passHref onClick={() => setExpanded(false)}>
                         <Image src={Logo} alt="Platinum Auto Detailing Logo" width={150} layout="intrinsic" />
                     </Navbar.Brand>

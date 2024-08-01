@@ -26,6 +26,7 @@ export default function ContactForm() {
         }
     };
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData();
@@ -166,7 +167,7 @@ export default function ContactForm() {
                             />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="reason" className="form-label">*Reason for Contacting (Select all that apply):</label>
+                            <label className="form-label">*Reason for Contacting (Select all that apply):</label>
                             <div id="reason">
                                 <div className="form-check">
                                     <input

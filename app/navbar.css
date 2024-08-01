@@ -3,7 +3,9 @@
     width: 100%;
     top: 0;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease-in, backdrop-filter 0.3s ease-in, -webkit-backdrop-filter 0.3s ease-in;
+
     /* White color with 90% opacity */
 }
 
@@ -13,10 +15,12 @@
 }
 
 .navbar-icons {
-    color: var(--text);
+    color: var(--text-light);
 }
 
 .navbar-container.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Slightly transparent background color */
     backdrop-filter: blur(10px);
     /* Blur effect */
     -webkit-backdrop-filter: blur(10px);
@@ -24,6 +28,8 @@
 }
 
 .navbar-container.navbar-expanded {
+    background-color: rgba(0, 0, 0, 0.8);
+
     backdrop-filter: blur(10px);
     /* Blur effect */
     -webkit-backdrop-filter: blur(10px);
@@ -43,7 +49,8 @@
 
 
 .nav-link {
-    color: var(--text) !important;
+    color: var(--text-light) !important;
+    text-shadow: 1px 1px 2px #111518;
     transition: color 0.3s ease, background-color 0.3s ease;
     text-decoration: none;
     font-size: 1.5rem;
@@ -160,7 +167,7 @@
     }
 
     .navbar-container.navbar-expanded {
-        background-color: var(--background-color) !important;
+        background-color: black !important;
 
     }
 
