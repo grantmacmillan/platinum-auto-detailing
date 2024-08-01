@@ -5,7 +5,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaStar, FaDollarSign } from 'react-icons/fa';
 import ImageSlider from "./components/ImageSlider";
 import Testimonials from "./components/Testimonials";
-
+//pushing now
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
