@@ -34,6 +34,18 @@ const images = [
     '/images/client-pics/exterior1.jpg',
 
     '/images/client-pics/cleaning5.jpg',
+    '/images/client-pics/car2.jpg',
+    '/images/client-pics/suv1.jpg',
+    '/images/client-pics/suv2.jpg',
+
+    '/images/client-pics/inside6.jpg',
+    '/images/client-pics/inside7.jpg',
+    '/images/client-pics/inside8.jpg',
+    '/images/client-pics/backseat.jpg',
+    '/images/client-pics/console.jpg',
+    '/images/client-pics/wheel1.jpg',
+    '/images/client-pics/inside9.jpg',
+    '/images/client-pics/car9.jpg',
 
     // Add more image paths or URLs as needed
 ];
@@ -52,7 +64,7 @@ export default function Gallery() {
                                 <div className={styles.imageContainer}>
                                     <Image
                                         src={src}
-                                        alt={`BBQ cleaning ${index + 1}`}
+                                        alt={`Auto Detailing ${index + 1}`}
                                         className={styles.image}
                                         width={300}
                                         height={200}
