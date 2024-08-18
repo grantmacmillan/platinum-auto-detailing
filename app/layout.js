@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={titilliumWeb.className}>
+        <Analytics />
         <CustomNavbar />
         <main>{children}</main>
         <CustomFooter />
