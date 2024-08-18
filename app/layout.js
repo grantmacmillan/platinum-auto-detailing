@@ -1,4 +1,5 @@
 import { Titillium_Web } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 import './globals.css';
 import CustomFooter from "./components/CustomFooter";
 import CustomNavbar from "./components/CustomNavbar";
