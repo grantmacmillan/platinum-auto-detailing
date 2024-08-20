@@ -5,7 +5,8 @@
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0);
     transition: background-color 0.3s ease-in, backdrop-filter 0.3s ease-in, -webkit-backdrop-filter 0.3s ease-in;
-
+    flex-direction: column;
+    padding: 0 !important;
     /* White color with 90% opacity */
 }
 
@@ -16,6 +17,11 @@
 
 .navbar-icons {
     color: var(--text-light);
+}
+
+.navbar-container.scrolled .promo-bar {
+    display: none;
+    /* Optionally hide the promo bar when scrolled */
 }
 
 .navbar-container.scrolled {
@@ -47,6 +53,19 @@
 
 }
 
+.promo-bar {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 0px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    /* Ensures it stays above the navbar */
+    z-index: 1000;
+    margin-top: 0px;
+}
 
 .nav-link {
     color: var(--text-light) !important;
