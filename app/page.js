@@ -150,6 +150,8 @@ export default function Home() {
 
       <section >
         <ImageSlider beforeImage="/images/before20.jpg" afterImage="/images/after20.jpg"></ImageSlider>
+        <ImageSlider beforeImage="/images/before30.jpg" afterImage="/images/after30.jpg"></ImageSlider>
+
       </section>
 
       <section >

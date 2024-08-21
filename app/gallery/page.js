@@ -82,6 +82,8 @@ export default function Gallery() {
                 </svg>
             </div>
             <ImageSlider beforeImage="/images/before20.jpg" afterImage="/images/after20.jpg"></ImageSlider>
+            <ImageSlider beforeImage="/images/before30.jpg" afterImage="/images/after30.jpg"></ImageSlider>
+
         </div>
 
 

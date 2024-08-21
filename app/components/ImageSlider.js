@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const ImageSlider = ({ beforeImage, afterImage }) => {
     return (
-        <div style={{ display: "flex", justifyContent: "center", }}>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: 0 }}>
             <div className={styles.wrapper}>
                 <h3 className={styles.beforeText}>Before</h3>
                 <div className={styles.container}>
