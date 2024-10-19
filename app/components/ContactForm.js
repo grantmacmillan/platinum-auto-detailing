@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { FaCheck, FaPaperPlane, FaPhone, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaFacebook, FaLinkedin, FaTiktok, FaClock } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6'
+import { useRouter } from 'next/navigation';
 
 export default function ContactForm() {
     const [firstName, setFirstName] = useState('');
@@ -15,6 +16,8 @@ export default function ContactForm() {
     const [address, setAddress] = useState('');
     const [status, setStatus] = useState('');
     const [submitted, setSubmitted] = useState(false);
+
+    const router = useRouter(); // Initialize the router here
 
 
     const handleReasonChange = (e) => {
@@ -72,6 +75,7 @@ export default function ContactForm() {
                 setReason('Interior Cleaning');
                 setMessage('');
                 setSubmitted(true);
+                router.push('/thank-you');
             } else {
                 setStatus(result.error || 'Error submitting form');
                 setSubmitted(false);

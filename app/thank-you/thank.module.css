@@ -1,0 +1,275 @@
+.landingContainer {
+    background-color: var(--container-color-dark);
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.landing {
+    padding-top: 200px;
+    margin: auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+.landingText {
+    text-align: left;
+}
+
+.landingDescription {
+    color: #a5aeb5 !important;
+    font-weight: 400;
+    font-size: 1.1rem !important;
+}
+
+.landingSteps {
+    margin-top: 20px;
+}
+
+.landingStep {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.landingStepIcon {
+    margin-left: 10px;
+    color: var(--new-primary);
+    vertical-align: middle;
+}
+
+.landingStepFonts {
+    font-size: 1.5rem;
+    padding: 5px;
+
+}
+
+.landingStepTitle {
+    color: var(--new-primary);
+    font-weight: 600;
+}
+
+.landingStepDescription {
+    margin-left: 5px;
+    color: var(--text-light);
+    font-weight: 200;
+}
+
+.landingImage {
+    padding: 15px;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.landing h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: var(--text-light);
+}
+
+
+
+.highlightHeading {
+    font-weight: 600;
+    color: var(--text-light);
+    /* Make the text color transparent */
+
+    text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* For Safari and Chrome */
+    position: relative;
+    /* Ensure the pseudo-element is positioned relative to this element */
+}
+
+.landing p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.circularImage {
+    border-radius: 50%;
+    width: 300px;
+    /* Adjust the width as needed */
+    height: 300px;
+    /* Ensure height equals the width for a perfect circle */
+    object-fit: cover;
+    /* This ensures the image covers the area without being stretched */
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5)) grayscale(100%);
+}
+
+.image {
+    border-radius: 8px;
+    object-fit: cover;
+    border-width: 10px;
+    border-color: red;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: 400px;
+    max-width: 500px;
+}
+
+
+
+.hoverCard {
+    justify-content: center;
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    display: flex;
+    transition: transform 0.3s ease-out;
+    text-shadow: 1px 1px #000;
+}
+
+.hoverCard::before,
+.hoverCard::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.hoverCard::before {
+    background-image: inherit;
+}
+
+.hoverCard::after {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.hoverCardContent {
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hoverCardTitle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: margin 0.3s ease-out;
+    text-shadow: 1px 1px 2px #000;
+    color: #df1212;
+}
+
+.hoverCardDescription {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0;
+    color: #343a40;
+}
+
+.hoverCardLink {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: underline;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    margin-top: 10px;
+}
+
+/* Hover effects */
+.hoverCard:hover::before {
+    transform: scale(1.1);
+    /* Zoom-in effect */
+}
+
+.hoverCard:hover::after {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black overlay */
+    opacity: 1;
+}
+
+.hoverCard:hover .hoverCardIcon {
+    opacity: 0;
+}
+
+.hoverCard:hover .hoverCardTitle {
+    margin-top: 0;
+}
+
+.hoverCard:hover .hoverCardDescription,
+.hoverCard:hover .hoverCardLink {
+    opacity: 1;
+}
+
+.hoverCardLinkWrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .hoverCard {
+        height: 300px;
+    }
+
+    .hoverCardTitle {
+        font-size: 1.5rem;
+    }
+
+    .hoverCardIcon {
+        font-size: 3rem;
+    }
+
+    .hoverCardDescription {
+        font-size: 0.9rem;
+    }
+
+    .hoverCardLink {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+.description {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teamMemberImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.teamHeading {
+    margin-top: 1rem;
+}

@@ -32,6 +32,11 @@ export default async function sitemap() {
             lastModified: new Date(),
             priority: 0.8,
         },
+        {
+            url: `${BASE_URL}/thank-you`,
+            lastModified: new Date(),
+            priority: 0.1,
+        },
 
     ]
 }

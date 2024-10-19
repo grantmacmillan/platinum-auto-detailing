@@ -35,13 +35,7 @@ const CustomNavbar = () => {
 
 
             <Navbar expand="lg" className={`navbar-container ${scrolled ? 'scrolled' : ''} ${expanded ? 'navbar-expanded' : ''}`} expanded={expanded} onToggle={() => setExpanded(!expanded)} >
-                <Link href="/contact" passHref className="promo-bar">
-                    <div >
-                        <Container className="d-flex justify-content-center">
-                            <span>🎉 Get 15% off all services until the end of September! Contact Us Today!</span>
-                        </Container>
-                    </div>
-                </Link>
+
                 <Container className='mt-0 mb-0'>
 
                     <Navbar.Brand as={Link} href="/" passHref onClick={() => setExpanded(false)}>
