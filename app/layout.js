@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react"
 import './globals.css';
 import CustomFooter from "./components/CustomFooter";
 import CustomNavbar from "./components/CustomNavbar";
+import Script from 'next/script';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'slick-carousel/slick/slick.css';
@@ -29,6 +30,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16744537812"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-16744537812');
+          `}
+        </Script>
+      </head>
       <body className={titilliumWeb.className}>
         <Analytics />
         <CustomNavbar />
