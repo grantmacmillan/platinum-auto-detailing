@@ -94,7 +94,9 @@ export default function ContactForm() {
                 <Col md={4} className='mb-5'>
                     <div className="col-md-10 contact-info">
                         <h1>Have Questions?<br />Get In Touch</h1>
-                        <p className='contact-info'>Get in touch with Platinum Auto Detailing for a free quote and to get your vehicle professionally detailed and looking its best!</p>
+                        <p className='contact-info'>        Schedule an appointment with Platinum Auto Detailing, a mobile service that comes directly to your home! Get a free quote and enjoy professional detailing without leaving your driveway.
+
+                        </p>
                         <h2 className='contact-heading'>Contact Information</h2>
                         <p className='home-contact-bullets'><FaPhone className='contact-icons' /> <a className='contact-link' href="tel:+16475293354"> +1 (647) 529-3354</a></p>
                         <p className='home-contact-bullets'><FaEnvelope className='contact-icons' /> <a className='contact-link' href="mailto:Autodetailing.platinum@gmail.com"> Autodetailing.platinum@gmail.com</a></p>
@@ -111,7 +113,7 @@ export default function ContactForm() {
                     </div>
                 </Col>
                 <Col md={4} className='mb-4'>
-                    <h1 className='contact-heading'>Contact Us Today</h1>
+                    <h1 className='contact-heading'>Schedule Your Mobile Detailing Service Today!</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="row ">
                             <div className="col-md-6 mb-3">
@@ -182,7 +184,7 @@ export default function ContactForm() {
                                         onChange={handleReasonChange}
                                     />
                                     <label className="form-check-label" htmlFor="interiorCleaningSilverPackage">
-                                        Interior Cleaning - Silver Package
+                                        Interior Cleaning - Silver Package ($120)
                                     </label>
                                 </div>
                                 <div className="form-check">
@@ -194,7 +196,7 @@ export default function ContactForm() {
                                         onChange={handleReasonChange}
                                     />
                                     <label className="form-check-label" htmlFor="interiorCleaningGoldPackage">
-                                        Interior Cleaning - Gold Package
+                                        Interior Cleaning - Gold Package ($150)
                                     </label>
                                 </div>
                                 <div className="form-check">
@@ -206,7 +208,7 @@ export default function ContactForm() {
                                         onChange={handleReasonChange}
                                     />
                                     <label className="form-check-label" htmlFor="interiorCleaningPlatinumPackage">
-                                        Interior Cleaning - Platinum Package
+                                        Interior Cleaning - Platinum Package ($225)
                                     </label>
                                 </div>
                                 <div className="form-check">
@@ -218,7 +220,7 @@ export default function ContactForm() {
                                         onChange={handleReasonChange}
                                     />
                                     <label className="form-check-label" htmlFor="ExteriorDetailingGoldPackage">
-                                        Exterior Cleaning - Gold Package
+                                        Exterior Cleaning - Gold Package ($50)
                                     </label>
                                 </div>
                                 <div className="form-check">

@@ -52,7 +52,7 @@ export default function Home() {
           <Row>
             <Col md={6} className={styles.overlay}>
               <h1 className={styles.heading}>We Bring the <strong>Shine</strong> to You</h1>
-              <h2 className={styles.subHeading}>Exceptional Care Delivered to Your Location!</h2>
+              <h2 className={styles.subHeading}>Expert Detailing, Delivered Directly to Your Home!</h2>
               <div className={styles.buttons}>
                 <Link href="/contact" passHref >
                   <span className="cta-button">
