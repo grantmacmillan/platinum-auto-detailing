@@ -10,7 +10,19 @@ export default async function sitemap() {
             priority: 1.0,
         },
         {
-            url: `${BASE_URL}/our-services`,
+            url: `${BASE_URL}/exterior-detailing`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
+            url: `${BASE_URL}/interior-detailing`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
+            url: `${BASE_URL}/ceramic-coating`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.9,

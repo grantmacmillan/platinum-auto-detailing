@@ -1,0 +1,83 @@
+.pricing-container {}
+
+.pricing-card {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.pricing-card-body {
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.pricing-card-title {
+    font-size: 2rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+
+
+.btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.pricing-card-title-small {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2px;
+    color: var(--primary-color);
+}
+
+
+
+.pricing-card-footer {
+    padding: 1rem 2rem;
+    color: #000;
+}
+
+.gold-style {
+    color: var(--text-light) !important;
+    text-shadow: 0px 0px 5px #E6B72D, 0px 0px 10px #E6B72D, 0px 0px 10px #E6B72D, 0px 0px 20px #E6B72D !important;
+
+}
+
+.silver-style {
+    color: var(--text-light) !important;
+    text-shadow: 0px 0px 5px #C0C0C0, 0px 0px 10px #C0C0C0, 0px 0px 10px #C0C0C0, 0px 0px 20px #C0C0C0 !important;
+}
+
+.platinum-style {
+    color: var(--text-light) !important;
+    text-shadow: 0px 0px 5px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 10px var(--new-primary), 0px 0px 20px var(--new-primary) !important;
+
+}
+
+.gold-text {
+    color: #E6B72D;
+}
+
+.silver-text {
+    color: #C0C0C0;
+}
+
+.platinum-text {
+    color: var(--new-primary);
+}
+
+.gold-button {
+    background-color: #E6B72D;
+}
+
+.silver-button {
+    background-color: #C0C0C0;
+}
+
+.platinum-button {
+    background-color: #E5E4E2;
+}

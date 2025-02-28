@@ -33,8 +33,9 @@ const CustomFooter = () => {
                         </Col>
                         <Col xl={2} lg={3} md={4} sm={12}>
                             <h4>Helpful Links</h4>
-                            <p><Link className='contact-link' href="/our-services/#interior">Interior Detailing</Link></p>
-                            <p><Link className='contact-link' href="/our-services/#exterior">Exterior Detailing</Link></p>
+                            <p><Link className='contact-link' href="/interior-detailing">Interior Detailing</Link></p>
+                            <p><Link className='contact-link' href="/exterior-detailing">Exterior Detailing</Link></p>
+                            <p><Link className='contact-link' href="/ceramic-coating">Ceramic Coating</Link></p>
                             <p><Link className='contact-link' href="/contact">Contact</Link></p>
                             <p><Link className='contact-link' href="/about-us">About Us</Link></p>
                             <p><Link className='contact-link' href="/gallery">Gallery</Link></p>
@@ -57,7 +58,7 @@ const CustomFooter = () => {
                         <Row className='justify-content-center'>
                             <Col md={12}>
                                 <p className='text-center'>
-                                    Copyright © 2024 Platinum Auto Detailing - All Rights Reserved.
+                                    Copyright © 2025 Platinum Auto Detailing - All Rights Reserved.
                                 </p>
                             </Col>
 
