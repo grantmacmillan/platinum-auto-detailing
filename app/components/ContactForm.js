@@ -239,6 +239,18 @@ export default function ContactForm() {
                                     <input
                                         type="checkbox"
                                         className="form-check-input"
+                                        id="CeramicCoating"
+                                        value="Ceramic Coating"
+                                        onChange={handleReasonChange}
+                                    />
+                                    <label className="form-check-label" htmlFor="ExteriorDetailingPlatinumPackage">
+                                        Ceramic Coating
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input
+                                        type="checkbox"
+                                        className="form-check-input"
                                         id="other"
                                         value="Other"
                                         onChange={handleReasonChange}

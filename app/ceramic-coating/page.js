@@ -22,88 +22,6 @@ export const metadata = {
 
 export default function Coating() {
 
-    const interiorPlans = [
-        {
-            id: '1',
-            title: 'Silver Package',
-            image: '/images/wash-car.jpg',
-            price: '$80',
-            list: ['Full vacuuming throughout the entire vehicle',
-                'Wipe down on front dash and console, doors, and seats']
-        },
-        {
-            id: '2',
-            title: 'Gold Package',
-            image: '/images/wash-car.jpg',
-            price: '$150',
-            list: ['Full vacuuming throughout the entire vehicle',
-                'Removable mat and removable carpet shampoo',
-                'Driver side pedal cleanse',
-                'Wipe down and cleanse on surfaces such as seats, windows, doors, door jambs, trunk, trunk jambs, front dash and console']
-        },
-        {
-            id: '3',
-            title: 'Platinum Package',
-            image: '/images/wash-car.jpg',
-            price: '$200',
-            list: ['Full vacuuming throughout the entire vehicle',
-                'Removable mat and removable carpet shampoo',
-                'Driver side pedal cleanse',
-                'Full shampoo and deep clean on all upholstery such as front dash and console, seats, doors, door jambs, trunk, trunk jambs, and windows',
-                'Steam cleaning to remove any odor and stains on all carpets, seats, and interior surfaces',
-                'Interior protectant applied on all surfaces',
-                'Leather conditioner applied to all leather seats and surfaces ']
-        },
-    ]
-
-    const exteriorPlans = [
-        {
-            id: '1',
-            title: 'Silver Package',
-            image: '/images/wash-car.jpg',
-            price: '$40',
-            list: ['Full exterior hand wash + dry',
-                'Full tire and rim cleaning + tire dressing']
-        },
-        {
-            id: '2',
-            title: 'Gold Package',
-            image: '/images/wash-car.jpg',
-            price: 'Pricing may vary',
-            list: ['Full exterior hand wash + dry',
-                'Full tire and rim cleaning + tire dressing',
-                'Clay bar and premium wax on your cars paint',]
-        },
-    ]
-
-    const waxPlans = [
-        {
-            id: '1',
-            title: 'Wax Package',
-            image: '/images/wash-car.jpg',
-            price: '$40',
-            list: ['Full exterior hand wash + dry',
-                'Full tire and rim cleaning + tire dressing']
-        },
-    ]
-
-    const cardsData = [
-        {
-            id: 1,
-            title: 'Interior Car Detailing',
-            description: 'Meticulous interior car detailing service to keep your car\'s interior spotless and fresh.',
-            imgSrc: '/images/client-pics/inside3.jpg', // Replace with your image URL
-            link: '/our-services#interior'
-        },
-        {
-            id: 2,
-            title: 'Exterior Car Detailing',
-            description: 'Thorough exterior car detailing to restore and protect your car\'s paint and finish.',
-            imgSrc: '/images/client-pics/cleaning1.jpg', // Replace with your image URL
-            link: '/our-services#exterior'
-        },
-
-    ];
 
     return (
         <>
@@ -134,17 +52,27 @@ export default function Coating() {
                 <Container className="pt-5">
                     <Row className="justify-content-center">
                         <Col lg={{ span: 4, order: 1 }} xs={{ span: 12, order: 2 }}>
-                            <Image src='/images/client-pics/ceramic2.jpg' className={`my-3 ${styles.sectionImage}`} />
+                            <Image src='/images/client-pics/ceramic4.jpg' className={`my-3 ${styles.sectionImage}`} />
                         </Col>
                         <Col lg={{ span: 6, order: 2 }} xs={{ span: 12, order: 1 }}>
                             <h2 className={styles.sectionHeading}><strong>Ceramic</strong> Coating</h2>
 
                             <p className={styles.sectioinSubheading}><strong className={styles.convenience}>Protect</strong> Your Car with Advanced Coating</p>
-                            <p>Our ceramic coating service is designed to provide long-term protection and unmatched shine for your vehicle’s exterior. At Platinum Auto Detailing, we use industry-leading ceramic coatings that bond with your car’s paint to create a durable, hydrophobic layer that repels water, dirt, and contaminants. This advanced protection keeps your vehicle cleaner for longer and enhances its glossy finish.</p>
+                            <p>Ceramic coating is a premium protective solution designed to keep your vehicle looking its best for years. This advanced coating forms a strong, durable barrier against environmental contaminants such as dirt, water, and road salts, preventing them from bonding to your car’s surface. </p>
 
-                            <p>Ceramic coatings do more than just make your car look incredible—they act as a shield against UV rays, oxidation, bird droppings, road salt, and other environmental hazards that can damage your paint over time. By adding this protective layer, you not only preserve your vehicle's appearance but also maintain its resale value.</p>
+                            <p>In addition to protection, ceramic coatings enhance the aesthetic appeal of your car with a deep, high-gloss shine. The coating brings out the richness of your vehicle’s paint, making it look sleek and polished while resisting fading, oxidation, and swirl marks. This superior finish ensures your car maintains a showroom-quality look far longer than conventional waxing.
 
-                            <p>Investing in ceramic coating is about more than just aesthetics—it’s a smart way to safeguard your vehicle’s exterior for years to come, ensuring your car stays looking showroom-ready with minimal maintenance.</p>
+                            </p>
+
+                            <p>One of the biggest benefits of ceramic coatings is reduced maintenance. Thanks to their hydrophobic properties, water, mud, and grime slide off effortlessly, making washing and upkeep quicker and easier. Your car will stay cleaner between washes, saving you both time and money on frequent detailing. If you’re looking for a long-term solution to protect and enhance your vehicle’s exterior, ceramic coating is the ultimate choice.
+
+
+
+
+
+
+
+                            </p>
                         </Col>
                     </Row>
                 </Container>
@@ -161,7 +89,9 @@ export default function Coating() {
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Application of professional-grade ceramic coating.</li>
                                         <li><FaCheck /> Long-lasting protection against UV rays, dirt, and pollutants.</li>
-                                        <li><FaCheck /> Enhanced gloss and hydrophobic finish.</li>
+                                        <li><FaCheck /> Enhances shine and resists fading and oxidation.</li>
+                                        <li><FaCheck /> Repels grime for quicker, less frequent cleaning.</li>
+
 
                                     </ul>
                                 </div>

@@ -32,14 +32,21 @@ export default function Home() {
       title: 'Interior Car Detailing',
       description: 'Meticulous interior car detailing service to keep your car\'s interior spotless and fresh.',
       imgSrc: '/images/client-pics/inside3.jpg', // Replace with your image URL
-      link: '/our-services#interior'
+      link: '/interior-detailing'
     },
     {
       id: 2,
       title: 'Exterior Car Detailing',
       description: 'Thorough exterior car detailing to restore and protect your car\'s paint and finish.',
       imgSrc: '/images/client-pics/cleaning1.jpg', // Replace with your image URL
-      link: '/our-services#exterior'
+      link: '/exterior-detailing'
+    },
+    {
+      id: 3,
+      title: 'Ceramic Coating',
+      description: 'Our advanced coatings provide long-lasting protection, enhanced gloss, and superior resistance to dirt, UV rays, and environmental damage.',
+      imgSrc: '/images/client-pics/ceramic5.jpg', // Replace with your image URL
+      link: '/ceramic-coating'
     },
 
   ];
