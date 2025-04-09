@@ -186,7 +186,7 @@ export default function Services() {
                         <div className="col-md-6 col-lg-4 mb-4">
                             <div className="pricing-card text-start d-flex flex-column justify-content-between delay-1">
                                 <div className="pricing-card-body">
-                                    <p className="pricing-card-title-small silver-text">$120</p>
+                                    <p className="pricing-card-title-small silver-text">$90</p>
                                     <p className="pricing-card-title silver-style">SILVER PACKAGE</p>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Full vacuuming throughout the entire vehicle.</li>
@@ -211,7 +211,7 @@ export default function Services() {
                         <div className="col-md-6 col-lg-4 mb-4">
                             <div className="pricing-card text-start d-flex flex-column justify-content-between delay-2">
                                 <div className="pricing-card-body">
-                                    <p className="pricing-card-title-small gold-text">Starting at $150</p>
+                                    <p className="pricing-card-title-small gold-text">Starting at $100</p>
                                     <h2 className="pricing-card-title gold-style">GOLD PACKAGE</h2>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Includes all items from the Silver Package.</li>
@@ -238,7 +238,7 @@ export default function Services() {
                         <div className="col-md-6 col-lg-4 mb-4">
                             <div className="pricing-card text-start d-flex flex-column justify-content-between delay-3">
                                 <div className="pricing-card-body">
-                                    <p className="pricing-card-title-small">Starting at $225</p>
+                                    <p className="pricing-card-title-small">Starting at $175</p>
                                     <h2 className="pricing-card-title platinum-style">PLATINUM PACKAGE</h2>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Includes all items from the Gold Package.</li>
