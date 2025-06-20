@@ -51,6 +51,12 @@ const images = [
     '/images/client-pics/ceramic4.jpg',
     '/images/client-pics/ceramic5.jpg',
 
+    '/images/client-pics/car20.jpg',
+    '/images/client-pics/car21.jpg',
+
+    '/images/client-pics/car22.jpg',
+
+
 
 
     // Add more image paths or URLs as needed
