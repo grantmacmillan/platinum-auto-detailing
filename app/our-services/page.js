@@ -294,7 +294,7 @@ export default function Services() {
                         <div className="col-md-6 col-lg-4 mb-4">
                             <div className="pricing-card text-start d-flex flex-column justify-content-between delay-2">
                                 <div className="pricing-card-body">
-                                    <p className="pricing-card-title-small gold-text">$50</p>
+                                    <p className="pricing-card-title-small gold-text">$100</p>
                                     <h2 className="pricing-card-title gold-style">GOLD PACKAGE</h2>
                                     <ul className="list-unstyled mt-3 mb-4">
                                         <li><FaCheck /> Full exterior hand wash & dry.</li>
