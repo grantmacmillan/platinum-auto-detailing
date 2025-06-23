@@ -220,7 +220,7 @@ export default function ContactForm() {
                                         onChange={handleReasonChange}
                                     />
                                     <label className="form-check-label" htmlFor="ExteriorDetailingGoldPackage">
-                                        Exterior Cleaning - Gold Package ($50)
+                                        Exterior Cleaning - Gold Package ($100)
                                     </label>
                                 </div>
                                 <div className="form-check">
