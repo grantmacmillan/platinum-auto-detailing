@@ -55,6 +55,10 @@ const images = [
     '/images/client-pics/car21.jpg',
 
     '/images/client-pics/car22.jpg',
+    '/images/after41.jpg',
+    '/images/client-pics/inside42.jpg',
+    '/images/client-pics/inside43.jpg',
+    '/images/client-pics/inside44.jpg',
 
 
 
@@ -68,8 +72,41 @@ export default function Gallery() {
             <div className={styles.landingContainer} >
 
                 <Container className={`${styles.page} mt-0`}>
+
+                    <Row>
+                        <Col xs={12} sm={6} md={6} lg={6} className="mb-4">
+                            <h2 className={`text-center my-4  ${styles['section-heading']}`}>Before</h2>
+                            <div className={styles.imageContainer}>
+                                <Image
+                                    src={'/images/before40.jpg'}
+                                    alt={'/images/before40.jpg'}
+                                    className={styles.image}
+                                    width={900}
+                                    height={600}
+                                />
+                            </div>
+                        </Col>
+
+                        <Col xs={12} sm={6} md={6} lg={6} className="mb-4">
+                            <h2 className={`text-center my-4  ${styles['section-heading']}`}>After</h2>
+                            <div className={styles.imageContainer}>
+                                <Image
+                                    src={'/images/after40.jpg'}
+                                    alt={'/images/after40.jpg'}
+                                    className={styles.image}
+                                    width={900}
+                                    height={600}
+                                />
+                            </div>
+                        </Col>
+                    </Row>
+
+
                     <h1 className={`text-center my-4  ${styles['section-heading']}`}>Photo Gallery</h1>
                     <p className={`text-center my-4  ${styles['section-subheading']}`}>Explore our gallery to see the impeccable results we deliver with each detailing session at Platinum Auto Detailing. From everyday vehicles to luxury cars, our gallery showcases a variety of auto detailing projects that reflect our commitment to exceptional quality and meticulous attention to detail. </p>
+
+
+
                     <Row>
                         {images.map((src, index) => (
                             <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
