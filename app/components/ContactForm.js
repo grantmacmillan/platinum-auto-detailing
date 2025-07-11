@@ -184,7 +184,7 @@ export default function ContactForm() {
                                         onChange={handleReasonChange}
                                     />
                                     <label className="form-check-label" htmlFor="interiorCleaningSilverPackage">
-                                        Interior Cleaning - Silver Package ($90)
+                                        Interior Cleaning - Silver Package ($80)
                                     </label>
                                 </div>
                                 <div className="form-check">
@@ -196,7 +196,7 @@ export default function ContactForm() {
                                         onChange={handleReasonChange}
                                     />
                                     <label className="form-check-label" htmlFor="interiorCleaningGoldPackage">
-                                        Interior Cleaning - Gold Package ($100)
+                                        Interior Cleaning - Gold Package ($130)
                                     </label>
                                 </div>
                                 <div className="form-check">
@@ -208,7 +208,7 @@ export default function ContactForm() {
                                         onChange={handleReasonChange}
                                     />
                                     <label className="form-check-label" htmlFor="interiorCleaningPlatinumPackage">
-                                        Interior Cleaning - Platinum Package ($175)
+                                        Interior Cleaning - Platinum Package ($200)
                                     </label>
                                 </div>
                                 <div className="form-check">
